@@ -1,0 +1,22 @@
+/* tag or element selector */
+
+h1,
+h2,
+h3 {
+    color: darkblue;
+}
+
+
+/* class selector */
+
+.classic {
+    font-size: larger;
+    color: blue;
+}
+
+
+/* id selector */
+
+#differ {
+    color: blueviolet;
+}

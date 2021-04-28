@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="BudgetPlanner.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <form name="frmBudget">
+        <h2>Budget Planner</h2>
+        </br>
+        </br>
+        <table border="1" cellpadding="15">
+            <tr class="classic">
+                <th>Team</th>
+                <th>Size</th>
+                <th>Per Day Cost</th>
+                <th>Days Needed</th>
+            </tr>
+            <tr class="classic">
+                <td>Requirements Team</td>
+                <td>2</td>
+                <td>150</td>
+                <td><input name="RequirementTeamDays" type="number"></input>
+                </td>
+            </tr>
+            <tr class="classic">
+                <td>Design/UI Team</td>
+                <td>2</td>
+                <td>160</td>
+                <td><input name="DesignTeamDays" type="number"></input>
+                </td>
+            </tr>
+            <tr class="classic">
+                <td>DBA Team</td>
+                <td>2</td>
+                <td>200</td>
+                <td><input name="DBATeamDays" type="number"></input>
+                </td>
+            </tr>
+            <tr class="classic">
+                <td>Dev Team</td>
+                <td>6</td>
+                <td>750</td>
+                <td><input name="DevTeamDays" type="number"></input>
+                </td>
+            </tr>
+            <tr class="classic">
+                <td>Testing Team</td>
+                <td>4</td>
+                <td>260</td>
+                <td><input name="TestingTeamDays" type="number"></input>
+                </td>
+            </tr>
+            <tr class="classic">
+                <td><button type="button" onclick="calcBudget();">Calculate Budget</button></td>
+                <td colspan="2" align="right">Budget Total:</td>
+                <td><input name="Total" type="number" readonly="true"></input>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
